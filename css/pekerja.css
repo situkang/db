@@ -582,6 +582,11 @@ ul.tag2:last-child {
 	position:relative;
 	margin-bottom: 2em;
 }
+.agileinfo_team_grid2_text{
+    padding-left:0;
+    text-align: right;
+    margin-bottom: 2em;
+}
 .agileinfo_team_grid1_text h4{
 	padding: .6em;
     background: #fff;
@@ -598,6 +603,15 @@ ul.tag2:last-child {
     width: 50%;
     color: #fff;
     text-align: center;
+}
+.agileinfo_team_grid2_text h5 {
+    font-size: 16px;
+    padding: .5em;
+    background: gold;
+    width: 80%;
+    color: #fff;
+    text-align: right;
+    box-shadow: 50px;
 }
 .agileinfo_team_grid1_text p{
 	margin:1em 0 0 1em;
