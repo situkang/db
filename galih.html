@@ -6,6 +6,10 @@
 <link href="css/pekerja.css" rel="stylesheet" type="text/css" media="all" />
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/pesan.css">
 </head>
 	
 <body>
@@ -56,22 +60,74 @@
 							<p>Instalasi Air</p>
 						</div>
 						<ul class="social-nav model-3d-0 footer-social agile_social">
-							<li><a href="#" class="cart">
-								<div class="front"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
-								<div class="back"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div></a></li>
-							<li><a href="#" class="call"> 
-								<div class="front"><i class="fa fa-tty" aria-hidden="true"></i></div>
-								<div class="back"><i class="fa fa-tty" aria-hidden="true"></i></div></a></li>
-							<li><a href="#" class="contract">
-								<div class="front"><i class="fa fa-credit-card" aria-hidden="true"></i></div>
-								<div class="back"><i class="fa fa-credit-card" aria-hidden="true"></i></div></a></li>
-						</ul>
+							<li><a href="maps.html" class="maps">
+								<div class="front"><i class="fa fa-map-marker" aria-hidden="true"></i></i></div>
+								<div class="back"><i class="fa fa-map-marker" aria-hidden="true"></i></i></div></a></li>
+							</ul>
+							</div>
+							<div class="agileinfo_team_grid2_text"><h5>
+							
+							<!-- Trigger the modal with a button -->
+  							<button type="button" class="btn btn-default btn-lg" id="myBtn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true">
+  							
+  							</span></button>
+  							<!-- Modal -->
+  							<div class="modal fade" id="myModal" role="dialog">
+  							<div class="modal-dialog">
+  							<!-- Modal content-->
+  							<div class="modal-content">
+  								<div class="modal-header" style="padding:35px 50px;">
+  								<button type="button" class="close" data-dismiss="modal">&times;</button>
+  								<h4><span class="glyphicon glyphicon-saved"></span> Kontrak</h4>
+  							</div>
+  							<div class="modal-body" style="padding:40px 50px; color: black;">
+  								<div>
+  									<h1>Biaya: Rp.100.000</h1>
+          							<h3><form style="text-align: left;">
+	          							<input type="radio" name="radio1">Harian<br>
+    	      							<input type="radio" name="radio1">Borongan
+          							</form></h3>
+          						</div>
+        					</div>
+        					<div class="modal-footer">
+          					<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          					<button type="button" class="btn btn-default btn-lg" id="myBtn" data-toggle="modal" data-target="#modalku" data-dismiss="modal">Pesan</button>
+          					</div>
+        				</div>
+      				</div>
+      			</div>
+    		</div>
 
-					</div>
-					<div class="agileinfo_team_grid2_text"><h5><a href="#">Rp.100.000</a></h5></div>
-				</div>
+
+			<div class="modal fade" id="modalku" role="dialog">
+			    <div class="modal-dialog">
+			    <!-- Modal content-->
+			    	<div class="modal-content">
+			    		<div class="modal-header">
+			    			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			    			<h4 class="modal-title">Status Transaksi</h4>
+			        	</div>
+			        	<div class="modal-body">
+			          		<p>Selamat pemesanan anda telah berhasil</p>
+			        	</div>
+			        	<div class="modal-footer">
+			        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			        	</div>
+			    	</div>
+			    </div>
+			</div>
+			 
+			<script>
+			$(document).ready(function(){
+			    $("#myBtn").click(function(){
+			        $("#myModal").modal();
+			    });
+			});
+			</script></h5>
+			</div>
 		</div>
 	</div>
+</div>
 <!-- //team -->
 
 </body>
